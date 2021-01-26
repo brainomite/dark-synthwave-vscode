@@ -9,6 +9,12 @@ Do you like the theme Synthwave '84? Do you wish there was a dark version of it?
 I present Dark SynthWave '84
 
 ![Neon glowing text](https://raw.githubusercontent.com/brainomite/dark-synthwave-vscode/main/theme.png)
+<p class="figcaption" style="text-align: center; margin-top: -0.5rem; margin-bottom: 2rem; color: rgba(255,255,255,.5); font-size: smaller">
+  The fonts, yes plural, are <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>
+  & <a href="https://rubjo.github.io/victor-mono/">Victor Mono</a> see my blog
+  post on <a href="https://aaronyoung.dev/blog/2021-01-24-vscode-dual-fonts/">
+  how I used two fonts simultaneously</a>
+</p>
 
 ## But...why?
 I wanted something easier on my eyes.
