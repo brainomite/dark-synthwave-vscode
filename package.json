@@ -2,7 +2,7 @@
     "name": "dark-synthwave-vscode",
     "displayName": "Dark SynthWave '84",
     "description": "An amalgamation between Lukin & Synthwave-inspired color theme to satisfy your neon dreams",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "preview": true,
     "author": "Aaron Young",
     "publisher": "AaronYoung",
@@ -13,6 +13,7 @@
     "engines": {
         "vscode": "^1.33.0"
     },
+    "license": "MIT",
     "scripts": {
         "start": "vsce package"
     },
