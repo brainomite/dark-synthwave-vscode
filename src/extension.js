@@ -7,7 +7,7 @@ const diff = require('semver/functions/diff');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = "AaronYoung.synthwave-vscode";
+	this.extensionName = "AaronYoung.lukin-synthwave-vscode";
 	this.cntx = context;
 	this.extension = vscode.extensions.getExtension(this.extensionName);
 	if (this.extension) {
