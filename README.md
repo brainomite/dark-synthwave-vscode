@@ -38,7 +38,7 @@ Note: In the name of simplifying the install process and mitigating update-relat
 #### To customise the glow brightness
 In your `settings.json` add the key:
 ```
-"synthwave84.brightness": "0.45"
+"lukinSynthwave84.brightness": "0.45"
 ```
 The value should be a _float value_ from 0 to 1, where 0.0 is fully transparent. The default brightness is 0.45. To avoid eye strain, avoid using higher brightness values for extended periods of time.
 
@@ -49,7 +49,7 @@ Note: Changing the brightness currently only affects the opacity of the glow, th
 #### To enable editor chrome updates, but disable glow
 In your `settings.json` add the key:
 ```
-"synthwave84.disableGlow": true
+"lukinSynthwave84.disableGlow": true
 ```
 To see the changes, you need to rerun the activation function. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Enable Neon Dreams__".
 

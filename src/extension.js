@@ -32,7 +32,7 @@ function activate(context) {
 
 	}
 
-	const config = vscode.workspace.getConfiguration("synthwave84");
+	const config = vscode.workspace.getConfiguration("lukinSynthwave84");
 
 	let disableGlow = config && config.disableGlow ? !!config.disableGlow : false;
 
@@ -43,76 +43,113 @@ function activate(context) {
 	const parsedBrightness = Math.floor(brightness * 255).toString(16).toUpperCase();
 	let neonBrightness = parsedBrightness;
 
-	let disposable = vscode.commands.registerCommand('synthwave84.enableNeon', function () {
+	let disposable = vscode.commands.registerCommand(
+    "lukinSynthwave84.enableNeon",
+    function () {
+      const isWin = /^win/.test(process.platform);
+      const appDir = path.dirname(require.main.filename);
+      const base = appDir + (isWin ? "\\vs\\code" : "/vs/code");
 
-		const isWin = /^win/.test(process.platform);
-		const appDir = path.dirname(require.main.filename);
-		const base = appDir + (isWin ? "\\vs\\code" : "/vs/code");
+      const htmlFile =
+        base +
+        (isWin
+          ? "\\electron-browser\\workbench\\workbench.html"
+          : "/electron-browser/workbench/workbench.html");
 
-		const htmlFile =
-			base +
-			(isWin
-				? "\\electron-browser\\workbench\\workbench.html"
-				: "/electron-browser/workbench/workbench.html");
+      const templateFile =
+        base +
+        (isWin
+          ? "\\electron-browser\\workbench\\neondreams.js"
+          : "/electron-browser/workbench/neondreams.js");
+      try {
+        // const version = context.globalState.get(`${context.extensionName}.version`);
 
-    const templateFile =
-      base +
-      (isWin
-        ? "\\electron-browser\\workbench\\neondreams.js"
-        : "/electron-browser/workbench/neondreams.js");
-		try {
+        // generate production theme JS
+        const chromeStyles = fs.readFileSync(
+          __dirname + "/css/editor_chrome.css",
+          "utf-8"
+        );
+        const jsTemplate = fs.readFileSync(
+          __dirname + "/js/theme_template.js",
+          "utf-8"
+        );
+        const themeWithGlow = jsTemplate.replace(
+          /\[DISABLE_GLOW\]/g,
+          disableGlow
+        );
+        const themeWithChrome = themeWithGlow.replace(
+          /\[CHROME_STYLES\]/g,
+          chromeStyles
+        );
+        const finalTheme = themeWithChrome.replace(
+          /\[NEON_BRIGHTNESS\]/g,
+          neonBrightness
+        );
+        fs.writeFileSync(templateFile, finalTheme, "utf-8");
 
-			// const version = context.globalState.get(`${context.extensionName}.version`);
+        // modify workbench html
+        const html = fs.readFileSync(htmlFile, "utf-8");
 
-			// generate production theme JS
-			const chromeStyles = fs.readFileSync(__dirname +'/css/editor_chrome.css', 'utf-8');
-			const jsTemplate = fs.readFileSync(__dirname +'/js/theme_template.js', 'utf-8');
-			const themeWithGlow = jsTemplate.replace(/\[DISABLE_GLOW\]/g, disableGlow);
-			const themeWithChrome = themeWithGlow.replace(/\[CHROME_STYLES\]/g, chromeStyles);
-			const finalTheme = themeWithChrome.replace(/\[NEON_BRIGHTNESS\]/g, neonBrightness);
-			fs.writeFileSync(templateFile, finalTheme, "utf-8");
+        // check if the tag is already there
+        const isEnabled = html.includes("neondreams.js");
 
-			// modify workbench html
-			const html = fs.readFileSync(htmlFile, "utf-8");
+        if (!isEnabled) {
+          // delete synthwave script tag if there
+          let output = html.replace(
+            /^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/gm,
+            ""
+          );
+          // add script tag
+          output = html.replace(
+            /\<\/html\>/g,
+            `	<!-- SYNTHWAVE 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`
+          );
+          output += "</html>";
 
-			// check if the tag is already there
-			const isEnabled = html.includes("neondreams.js");
+          fs.writeFileSync(htmlFile, output, "utf-8");
 
-			if (!isEnabled) {
-				// delete synthwave script tag if there
-				let output = html.replace(/^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
-				// add script tag
-				output = html.replace(/\<\/html\>/g, `	<!-- SYNTHWAVE 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`);
-				output += '</html>';
+          vscode.window
+            .showInformationMessage(
+              "Neon Dreams enabled. VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.",
+              { title: "Restart editor to complete" }
+            )
+            .then(function (msg) {
+              vscode.commands.executeCommand("workbench.action.reloadWindow");
+            });
+        } else {
+          vscode.window
+            .showInformationMessage(
+              "Neon dreams is already enabled. Reload to refresh JS settings.",
+              { title: "Restart editor to refresh settings" }
+            )
+            .then(function (msg) {
+              vscode.commands.executeCommand("workbench.action.reloadWindow");
+            });
+        }
+      } catch (e) {
+        if (/ENOENT|EACCES|EPERM/.test(e.code)) {
+          vscode.window.showInformationMessage(
+            "You must run VS code with admin priviliges in order to enable Neon Dreams."
+          );
+          return;
+        } else {
+          vscode.window.showErrorMessage(
+            "Something went wrong when starting neon dreams"
+          );
+          return;
+        }
+      }
+    }
+  );
 
-				fs.writeFileSync(htmlFile, output, "utf-8");
-
-				vscode.window
-					.showInformationMessage("Neon Dreams enabled. VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.", { title: "Restart editor to complete" })
-					.then(function(msg) {
-						vscode.commands.executeCommand("workbench.action.reloadWindow");
-					});
-
-			} else {
-				vscode.window
-					.showInformationMessage('Neon dreams is already enabled. Reload to refresh JS settings.', { title: "Restart editor to refresh settings" })
-					.then(function(msg) {
-						vscode.commands.executeCommand("workbench.action.reloadWindow");
-					});
-			}
-		} catch (e) {
-			if (/ENOENT|EACCES|EPERM/.test(e.code)) {
-				vscode.window.showInformationMessage("You must run VS code with admin priviliges in order to enable Neon Dreams.");
-				return;
-			} else {
-				vscode.window.showErrorMessage('Something went wrong when starting neon dreams');
-				return;
-			}
-		}
-	});
-
-	let disable = vscode.commands.registerCommand('synthwave84.disableNeon', uninstall);
-	let whatsNew = vscode.commands.registerCommand('synthwave84.whatsNew', showUpdatePage);
+	let disable = vscode.commands.registerCommand(
+    "lukinSynthwave84.disableNeon",
+    uninstall
+  );
+  let whatsNew = vscode.commands.registerCommand(
+    "lukinSynthwave84.whatsNew",
+    showUpdatePage
+  );
 
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(disable);

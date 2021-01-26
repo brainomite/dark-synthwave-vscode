@@ -25,8 +25,8 @@
     ],
     "activationEvents": [
         "*",
-        "onCommand:synthwave84.enableNeon",
-        "onCommand:synthwave84.whatsNew"
+        "onCommand:lukinSynthwave84.enableNeon",
+        "onCommand:lukinSynthwave84.whatsNew"
     ],
     "main": "./src/extension.js",
     "contributes": {
@@ -39,27 +39,27 @@
         ],
         "commands": [
             {
-                "command": "synthwave84.enableNeon",
+                "command": "lukinSynthwave84.enableNeon",
                 "title": "Synthwave '84: Enable Neon Dreams"
             },
             {
-                "command": "synthwave84.disableNeon",
+                "command": "lukinSynthwave84.disableNeon",
                 "title": "Synthwave '84: Disable Neon Dreams"
             },
             {
-                "command": "synthwave84.whatsNew",
+                "command": "lukinSynthwave84.whatsNew",
                 "title": "Synthwave '84: What's New"
             }
         ],
         "configuration": {
             "title": "Synthwave '84",
             "properties": {
-                "synthwave84.brightness": {
+                "lukinSynthwave84.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "synthwave84.disableGlow": {
+                "lukinSynthwave84.disableGlow": {
                     "type": "boolean",
                     "default": false,
                     "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
