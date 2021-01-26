@@ -8,14 +8,17 @@
     "publisher": "AaronYoung",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robb0wen/lukin-synthwave-vscode"
+        "url": "https://github.com/brainomite/lukin-synthwave-vscode"
     },
     "engines": {
         "vscode": "^1.33.0"
     },
     "keywords": [
         "retro",
-        "80s"
+        "80s",
+        "Dark",
+        "Theme",
+        "Vibrant"
     ],
     "categories": [
         "Themes"
