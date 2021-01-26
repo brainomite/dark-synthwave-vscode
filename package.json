@@ -8,7 +8,7 @@
     "publisher": "AaronYoung",
     "repository": {
         "type": "git",
-        "url": "https://github.com/brainomite/lukin-synthwave-vscode"
+        "url": "https://github.com/brainomite/dark-synthwave-vscode"
     },
     "engines": {
         "vscode": "^1.33.0"
