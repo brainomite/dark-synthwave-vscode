@@ -35,11 +35,9 @@ To activate the glow, Set your active colour theme to Dark SynthWave '84 - as no
 
 Note: In the name of simplifying the install process and mitigating update-related issues, the new version of Dark SynthWave '84 doesn't use a custom CSS file anymore.
 
-#### To customise the glow brightness
-In your `settings.json` add the key:
-```
-"darkSynthwave84.brightness": "0.45"
-```
+#### To customize the glow brightness
+Go to __Settings>extensions>Dark Synthwave84: Brightness__ and set the value.
+
 The value should be a _float value_ from 0 to 1, where 0.0 is fully transparent. The default brightness is 0.45. To avoid eye strain, avoid using higher brightness values for extended periods of time.
 
 To see the changes, you need to rerun the activation function. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Dark Synthwave '84: Enable Neon Dreams__".
@@ -47,10 +45,8 @@ To see the changes, you need to rerun the activation function. Open your command
 Note: Changing the brightness currently only affects the opacity of the glow, the text will remain white (that may change in future updates). If you want to disable the glow effect but retain the chrome updates, see below.
 
 #### To enable editor chrome updates, but disable glow
-In your `settings.json` add the key:
-```
-"darkSynthwave84.disableGlow": true
-```
+Go to __Settings>extensions>Dark Synthwave84: Disable Glow__ and check off the option disable the glow effect.
+
 To see the changes, you need to rerun the activation function. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Enable Neon Dreams__".
 
 ### To remove corruption warning and [unsupported] from title-bar
@@ -61,7 +57,7 @@ Upon installation of 'Fix VSCode Checksums', open the command palette and execut
 ## Updates
 Every time you update VS code, you will need to repeat this step to re-enable the glow.
 
-## Disabling the glow and uninstallation
+## Disabling the glow and uninstalling
 The glow effect started as a joke and was never intended for long-term coding sessions. If you want to turn it off, you can disable it at any time by opening your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Disable Neon Dreams__".
 
 ### Font
