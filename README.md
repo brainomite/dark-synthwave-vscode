@@ -6,22 +6,28 @@ plus a few tweaks of my own.
 
 Do you like the theme Synthwave '84? Do you wish there was a dark version of it?
 
-I present Dark SynthWave '84
+I present Dark SynthWave '84, which has two variations, with and without the glow effect.
 
 ![Neon glowing text](https://raw.githubusercontent.com/brainomite/dark-synthwave-vscode/main/theme.png)
+
 <p class="figcaption" style="text-align: center; margin-top: -0.5rem; margin-bottom: 2rem; font-size: smaller">
-  The fonts, yes plural, are <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>
-  & <a href="https://rubjo.github.io/victor-mono/">Victor Mono</a> see my blog
-  post on <a href="https://aaronyoung.dev/blog/2021-01-24-vscode-dual-fonts/">
-  how I used two fonts simultaneously</a>
+  Glow enabled
 </p>
 
-### Compare with and without the glow effect
+![Neon text, no glow](https://raw.githubusercontent.com/brainomite/dark-synthwave-vscode/main/theme-no-glow.png)
 
-<iframe frameborder="0" class="juxtapose" width="100%" height="1850" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=a1de61c0-5ff7-11eb-83c8-ebb5d6f907df"></iframe>
+<p class="figcaption" style="text-align: center; margin-top: -0.5rem; margin-bottom: 2rem; font-size: smaller">
+  Glow disabled
+</p>
 
 ## But...why?
-I wanted something easier on my eyes.
+I wanted something easier on my eyes than the original Synthwave '84.
+
+## I love your font!
+Actually its two fonts! they are [JetBrains Mono](https://www.jetbrains.com/lp/mono/")
+& [Victor Mono](https://rubjo.github.io/victor-mono/) see my blog
+post on [how I used two fonts simultaneously](https://aaronyoung.dev/blog/2021-01-24-vscode-dual-fonts/)
+
 
 ## Installation
 To begin with, [install the base theme from the VS Marketplace](https://marketplace.visualstudio.com/items?itemName=AaronYoung.dark-synthwave-vscode). This is the way Dark SynthWave '84 is intended to be used day-to-day. If you want to enable the gratuitous 80s glow, it needs a little extra work to get it going.
