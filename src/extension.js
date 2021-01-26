@@ -7,7 +7,7 @@ const diff = require('semver/functions/diff');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = 'RobbOwen.synthwave-vscode';
+	this.extensionName = "AaronYoung.synthwave-vscode";
 	this.cntx = context;
 	this.extension = vscode.extensions.getExtension(this.extensionName);
 	if (this.extension) {
@@ -31,11 +31,11 @@ function activate(context) {
 		}
 
 	}
-	
+
 	const config = vscode.workspace.getConfiguration("synthwave84");
 
 	let disableGlow = config && config.disableGlow ? !!config.disableGlow : false;
-	
+
 	let brightness = parseFloat(config.brightness) > 1 ? 1 : parseFloat(config.brightness);
 	brightness = brightness < 0 ? 0 : brightness;
 	brightness = isNaN(brightness) ? 0.45 : brightness;
@@ -55,12 +55,11 @@ function activate(context) {
 				? "\\electron-browser\\workbench\\workbench.html"
 				: "/electron-browser/workbench/workbench.html");
 
-		const templateFile =
-				base +
-				(isWin
-					? "\\electron-browser\\workbench\\neondreams.js"
-					: "/electron-browser/workbench/neondreams.js");
-
+    const templateFile =
+      base +
+      (isWin
+        ? "\\electron-browser\\workbench\\neondreams.js"
+        : "/electron-browser/workbench/neondreams.js");
 		try {
 
 			// const version = context.globalState.get(`${context.extensionName}.version`);
@@ -72,7 +71,7 @@ function activate(context) {
 			const themeWithChrome = themeWithGlow.replace(/\[CHROME_STYLES\]/g, chromeStyles);
 			const finalTheme = themeWithChrome.replace(/\[NEON_BRIGHTNESS\]/g, neonBrightness);
 			fs.writeFileSync(templateFile, finalTheme, "utf-8");
-			
+
 			// modify workbench html
 			const html = fs.readFileSync(htmlFile, "utf-8");
 
@@ -85,9 +84,9 @@ function activate(context) {
 				// add script tag
 				output = html.replace(/\<\/html\>/g, `	<!-- SYNTHWAVE 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`);
 				output += '</html>';
-	
+
 				fs.writeFileSync(htmlFile, output, "utf-8");
-				
+
 				vscode.window
 					.showInformationMessage("Neon Dreams enabled. VS code must reload for this change to take effect. Code may display a warning that it is corrupted, this is normal. You can dismiss this message by choosing 'Don't show this again' on the notification.", { title: "Restart editor to complete" })
 					.then(function(msg) {
@@ -114,7 +113,7 @@ function activate(context) {
 
 	let disable = vscode.commands.registerCommand('synthwave84.disableNeon', uninstall);
 	let whatsNew = vscode.commands.registerCommand('synthwave84.whatsNew', showUpdatePage);
-	
+
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(disable);
 	context.subscriptions.push(whatsNew);

@@ -1,23 +1,23 @@
 # SynthWave '84 - VS Code theme
 ![Synthwave '84 logo over a cityscape](./banner.png)
 
-Do you remember that endless summer back in '84? Cruising down the ocean-highway with the top down, the wind in our hair and heads buzzing with neon dreams? 
+Do you remember that endless summer back in '84? Cruising down the ocean-highway with the top down, the wind in our hair and heads buzzing with neon dreams?
 
-No, I don't remember it either, but with this experimental theme we can go there. 
+No, I don't remember it either, but with this experimental theme we can go there.
 
-__As of v0.1.0, no external extensions are needed to activate the glow effect!__ 
+__As of v0.1.0, no external extensions are needed to activate the glow effect!__
 
 ![Neon glowing text](./theme.jpg)
 
 This colour scheme is influenced by the music and the cover artwork of modern Synthwave bands like FM-84, Timecop 1983 and The Midnight. By association, that means I've also taken heavy influence from the excellent [retro-tinged artwork of James White](https://signalnoise.com/) (check out his work, it's awesome).
 
 ## But...why?
-I was a kid in the 80s but for most of my teenage life I strongly disliked nearly everything about the 80s aesthetic of my childhood. It was like, _so lame_. With the hindsight of recent years though, I've realised that it was actually pretty sweet and I wanted to celebrate it a little. 
+I was a kid in the 80s but for most of my teenage life I strongly disliked nearly everything about the 80s aesthetic of my childhood. It was like, _so lame_. With the hindsight of recent years though, I've realised that it was actually pretty sweet and I wanted to celebrate it a little.
 
 Much the same way, in the modern web-development world of shaders, React and WebGL, I feel like it's easy to forget that the basics are actually pretty damn good. To that end, this theme goes back to basics - No Shader magic. No cloud-streamed WebGL render-farms. Just plain CSS :)
 
 ## Installation
-To begin with, [install the base theme from the VS Marketplace](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode). This is the way Synthwave '84 is intended to be used day-to-day. If you want to enable the gratuitous 80s glow, it needs a little extra work to get it going. 
+To begin with, [install the base theme from the VS Marketplace](https://marketplace.visualstudio.com/items?itemName=AaronYoung.synthwave-vscode). This is the way Synthwave '84 is intended to be used day-to-day. If you want to enable the gratuitous 80s glow, it needs a little extra work to get it going.
 
 ### Disclaimer
 VS code doesn't natively support text effects and as a result, the glow is experimental. It's likely to be buggy and, whilst it looks rad, it isn't intended for extended use. To enable the glow, the extension has to modify the internal files of VS Code, so use with caution. Should something go wrong, you can disable the glow by following the instructions below. If for any reason you can't open VS Code, you can fix the issue with a fresh install of VS Code.
@@ -25,7 +25,7 @@ VS code doesn't natively support text effects and as a result, the glow is exper
 If you do decide use the glow effect, you do so at your own risk. Bring your Sunglasses. Here be (laser)dragons.
 
 ### To enable the glow
-As of v0.1.0, external extensions are no longer needed to active the glow. 
+As of v0.1.0, external extensions are no longer needed to active the glow.
 
 Firstly, if you are a Windows user, you may need to run VS Code with administrator privileges. For Linux and Mac users, Code must not be installed in a read-only location and you must have write permissions.
 
@@ -40,7 +40,7 @@ In your `settings.json` add the key:
 ```
 "synthwave84.brightness": "0.45"
 ```
-The value should be a _float value_ from 0 to 1, where 0.0 is fully transparent. The default brightness is 0.45. To avoid eye strain, avoid using higher brightness values for extended periods of time. 
+The value should be a _float value_ from 0 to 1, where 0.0 is fully transparent. The default brightness is 0.45. To avoid eye strain, avoid using higher brightness values for extended periods of time.
 
 To see the changes, you need to rerun the activation function. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Enable Neon Dreams__".
 

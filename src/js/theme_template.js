@@ -53,7 +53,9 @@
       for(let mutation of mutationsList) {
           if (mutation.type === 'attributes') {
             // only init if we're using a Synthwave 84 subtheme
-            const isUsingSynthwave = document.querySelector('[class*="RobbOwen-synthwave-vscode-themes"]');
+            const isUsingSynthwave = document.querySelector(
+              '[class*="AaronYoung-synthwave-vscode-themes"]'
+            );
             // does the style div exist yet?
             const tokensLoaded = document.querySelector('.vscode-tokens-styles');
             // does it have content ?
@@ -66,7 +68,7 @@
             }
           }
           if (mutation.type === 'childList') {
-            const isUsingSynthwave = document.querySelector('[class*="RobbOwen-synthwave-vscode-themes"]');
+            const isUsingSynthwave = document.querySelector('[class*="AaronYoung-synthwave-vscode-themes"]');
             const tokensLoaded = document.querySelector('.vscode-tokens-styles');
             const tokenStyles = document.querySelector('.vscode-tokens-styles').innerText;
 
