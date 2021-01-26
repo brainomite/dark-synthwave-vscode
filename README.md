@@ -16,6 +16,10 @@ I present Dark SynthWave '84
   how I used two fonts simultaneously</a>
 </p>
 
+### Compare with and without the glow effect
+
+<iframe frameborder="0" class="juxtapose" width="100%" height="1850" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=a1de61c0-5ff7-11eb-83c8-ebb5d6f907df"></iframe>
+
 ## But...why?
 I wanted something easier on my eyes.
 
