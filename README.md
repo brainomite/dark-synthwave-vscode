@@ -1,13 +1,12 @@
 # Dark SynthWave '84 - VS Code theme
-![Dark SynthWave '84 logo over a cityscape](./banner.png)
-
 
 This is an amalgamation between two themes, [Lukin Theme](https://marketplace.visualstudio.com/items?itemName=lukinco.lukin-vscode-theme)
 & [Synthwave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
 plus a few tweaks of my own.
 
 Do you like the theme Synthwave '84? Do you wish there was a dark version of it?
-I present Dark SynthWave 84
+
+I present Dark SynthWave '84
 
 ![Neon glowing text](./theme.png)
 
