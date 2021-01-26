@@ -1,5 +1,17 @@
 # Dark SynthWave '84 - VS Code theme
 
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=lukinco.lukin-vscode-theme">
+    <img alt="Version" src="https://vsmarketplacebadge.apphb.com/version/aaronYoung.dark-synthwave-vscode.svg" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=aaronYoung.dark-synthwave-vscode">
+    <img alt="Downloads" src="https://vsmarketplacebadge.apphb.com/downloads/aaronYoung.dark-synthwave-vscode.svg" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=aaronYoung.dark-synthwave-vscode">
+    <img alt="Installs" src="https://vsmarketplacebadge.apphb.com/installs/aaronYoung.dark-synthwave-vscode.svg" />
+  </a>
+</p>
+
 This is an amalgamation between two themes, [Lukin Theme](https://marketplace.visualstudio.com/items?itemName=lukinco.lukin-vscode-theme)
 & [Synthwave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
 plus a few tweaks of my own.
