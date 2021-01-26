@@ -8,7 +8,7 @@ Do you like the theme Synthwave '84? Do you wish there was a dark version of it?
 
 I present Dark SynthWave '84
 
-![Neon glowing text](./theme.png)
+![Neon glowing text](https://raw.githubusercontent.com/brainomite/dark-synthwave-vscode/main/theme.png)
 
 ## But...why?
 I wanted something easier on my eyes.
