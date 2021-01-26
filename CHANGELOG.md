@@ -4,7 +4,12 @@ extension pack will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
+## [0.0.12]
+### Add
+- Scripts to package.json
+## [0.0.11]
+__NO CHANGES__
+This was an error.
 ## [0.0.10]
 ### Update
 - Fix grammar issues in README

@@ -15,7 +15,9 @@
     },
     "license": "MIT",
     "scripts": {
-        "start": "vsce package"
+        "build": "vsce package",
+        "postversion": "npm run build",
+        "patch-version": "npm version patch"
     },
     "keywords": [
         "Glow",
