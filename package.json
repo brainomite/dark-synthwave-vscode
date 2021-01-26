@@ -5,7 +5,6 @@
     "version": "0.1.8",
     "author": "Robb Owen",
     "publisher": "RobbOwen",
-    "icon": "icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/robb0wen/synthwave-vscode"
