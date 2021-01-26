@@ -40,7 +40,7 @@
     newStyleTag.innerText = updatedThemeStyles.replace(/(\r\n|\n|\r)/gm, '');
     document.body.appendChild(newStyleTag);
 
-    console.log('Synthwave \'84: NEON DREAMS initialised!');
+    console.log("Dark Synthwave '84: NEON DREAMS initialized!");
 
     // disconnect the observer because we don't need it anymore
     if (obs) {
@@ -54,7 +54,7 @@
           if (mutation.type === 'attributes') {
             // only init if we're using a Synthwave 84 subtheme
             const isUsingSynthwave = document.querySelector(
-              '[class*="AaronYoung-lukin-synthwave-vscode-themes"]'
+              '[class*="AaronYoung-dark-synthwave-vscode-themes"]'
             );
             // does the style div exist yet?
             const tokensLoaded = document.querySelector('.vscode-tokens-styles');
@@ -69,7 +69,7 @@
           }
           if (mutation.type === 'childList') {
             const isUsingSynthwave = document.querySelector(
-              '[class*="AaronYoung-lukin-synthwave-vscode-themes"]'
+              '[class*="AaronYoung-dark-synthwave-vscode-themes"]'
             );
             const tokensLoaded = document.querySelector('.vscode-tokens-styles');
             const tokenStyles = document.querySelector('.vscode-tokens-styles').innerText;

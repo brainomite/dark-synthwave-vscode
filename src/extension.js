@@ -7,7 +7,7 @@ const diff = require('semver/functions/diff');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = "AaronYoung.lukin-synthwave-vscode";
+	this.extensionName = "AaronYoung.dark-synthwave-vscode";
 	this.cntx = context;
 	this.extension = vscode.extensions.getExtension(this.extensionName);
 	if (this.extension) {
@@ -32,7 +32,7 @@ function activate(context) {
 
 	}
 
-	const config = vscode.workspace.getConfiguration("lukinSynthwave84");
+	const config = vscode.workspace.getConfiguration("darkSynthwave84");
 
 	let disableGlow = config && config.disableGlow ? !!config.disableGlow : false;
 
@@ -44,7 +44,7 @@ function activate(context) {
 	let neonBrightness = parsedBrightness;
 
 	let disposable = vscode.commands.registerCommand(
-    "lukinSynthwave84.enableNeon",
+    "darkSynthwave84.enableNeon",
     function () {
       const isWin = /^win/.test(process.platform);
       const appDir = path.dirname(require.main.filename);
@@ -143,11 +143,11 @@ function activate(context) {
   );
 
 	let disable = vscode.commands.registerCommand(
-    "lukinSynthwave84.disableNeon",
+    "darkSynthwave84.disableNeon",
     uninstall
   );
   let whatsNew = vscode.commands.registerCommand(
-    "lukinSynthwave84.whatsNew",
+    "darkSynthwave84.whatsNew",
     showUpdatePage
   );
 

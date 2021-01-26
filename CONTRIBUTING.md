@@ -1,5 +1,5 @@
-# Contributing to SynthWave '84
-So, you'd like to contribute to Synthwave '84? Awesome!
+# Contributing to Dark SynthWave '84
+So, you'd like to contribute to Dark SynthWave '84? Awesome!
 
 However, before you make your changes, please get in touch to make the project owner aware of what you're proposing. The best way to do this is to raise an issue clearly detailing the change(s) you wish to make.
 

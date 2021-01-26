@@ -1,7 +1,7 @@
 {
-    "name": "lukin-synthwave-vscode",
-    "displayName": "SynthWave '84",
-    "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
+    "name": "dark-synthwave-vscode",
+    "displayName": "Dark SynthWave '84",
+    "description": "An amalgamation between Lukin & Synthwave-inspired color theme to satisfy your neon dreams",
     "version": "0.0.1",
     "preview": true,
     "author": "Aaron Young",
@@ -14,8 +14,8 @@
         "vscode": "^1.33.0"
     },
     "keywords": [
-        "retro",
-        "80s",
+        "Glow",
+        "Glowing",
         "Dark",
         "Theme",
         "Vibrant"
@@ -25,44 +25,44 @@
     ],
     "activationEvents": [
         "*",
-        "onCommand:lukinSynthwave84.enableNeon",
-        "onCommand:lukinSynthwave84.whatsNew"
+        "onCommand:darkSynthwave84.enableNeon",
+        "onCommand:darkSynthwave84.whatsNew"
     ],
     "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
-                "label": "SynthWave '84",
+                "label": "Dark SynthWave '84",
                 "uiTheme": "vs-dark",
                 "path": "./themes/synthwave-color-theme.json"
             }
         ],
         "commands": [
             {
-                "command": "lukinSynthwave84.enableNeon",
-                "title": "Synthwave '84: Enable Neon Dreams"
+                "command": "darkSynthwave84.enableNeon",
+                "title": "Dark SynthWave '84: Enable Neon Dreams"
             },
             {
-                "command": "lukinSynthwave84.disableNeon",
-                "title": "Synthwave '84: Disable Neon Dreams"
+                "command": "darkSynthwave84.disableNeon",
+                "title": "Dark SynthWave '84: Disable Neon Dreams"
             },
             {
-                "command": "lukinSynthwave84.whatsNew",
-                "title": "Synthwave '84: What's New"
+                "command": "darkSynthwave84.whatsNew",
+                "title": "Dark SynthWave '84: What's New"
             }
         ],
         "configuration": {
-            "title": "Synthwave '84",
+            "title": "Dark SynthWave '84",
             "properties": {
-                "lukinSynthwave84.brightness": {
+                "darkSynthwave84.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "lukinSynthwave84.disableGlow": {
+                "darkSynthwave84.disableGlow": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+                    "description": "Disable the glow effect, but show Dark SynthWave '84 editor chrome updates"
                 }
             }
         }
