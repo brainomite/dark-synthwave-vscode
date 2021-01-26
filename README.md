@@ -35,15 +35,13 @@ To begin with, [install the base theme from the VS Marketplace](https://marketpl
 ### Disclaimer
 VS code doesn't natively support text effects and as a result, the glow is experimental. It's likely to be buggy and, whilst it looks rad, it isn't intended for extended use. To enable the glow, the extension has to modify the internal files of VS Code, so use with caution. Should something go wrong, you can disable the glow by following the instructions below. If for any reason you can't open VS Code, you can fix the issue with a fresh install of VS Code.
 
-If you do decide use the glow effect, you do so at your own risk. Bring your Sunglasses. Here be (laser)dragons.
+If you do decide to use the glow effect, you do so at your own risk.
 
 ### To enable the glow
 
 Firstly, if you are a Windows user, you may need to run VS Code with administrator privileges. For Linux and Mac users, Code must not be installed in a read-only location and you must have write permissions.
 
 To activate the glow, Set your active colour theme to Dark SynthWave '84 - as now the glow is only active when the base theme is selected. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Dark Synthwave '84: Enable Neon Dreams__". It will prompt you to restart, and when you do the lights should be on 😲
-
-Note: In the name of simplifying the install process and mitigating update-related issues, the new version of Dark SynthWave '84 doesn't use a custom CSS file anymore.
 
 #### To customize the glow brightness
 Go to __Settings>extensions>Dark Synthwave84: Brightness__ and set the value.
@@ -55,7 +53,7 @@ To see the changes, you need to rerun the activation function. Open your command
 Note: Changing the brightness currently only affects the opacity of the glow, the text will remain white (that may change in future updates). If you want to disable the glow effect but retain the chrome updates, see below.
 
 #### To enable editor chrome updates, but disable glow
-Go to __Settings>extensions>Dark Synthwave84: Disable Glow__ and check off the option disable the glow effect.
+Go to __Settings>extensions>Dark Synthwave84: Disable Glow__ and check off the option to disable the glow effect.
 
 To see the changes, you need to rerun the activation function. Open your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Enable Neon Dreams__".
 
@@ -70,11 +68,12 @@ Every time you update VS code, you will need to repeat this step to re-enable th
 ## Disabling the glow and uninstalling
 The glow effect started as a joke and was never intended for long-term coding sessions. If you want to turn it off, you can disable it at any time by opening your command palette with `Ctrl + Shift + P` or `Shift + ⌘ + P` and choose "__Disable Neon Dreams__".
 
-### Font
-I haven't included a font in this release as I know that it's a very personal preference. The font I use (that is seen in the image above) is actually two fonts. [JetBrains Mono](https://www.jetbrains.com/lp/mono/), which I recommend if you're a fan of ligatures. Well guess what, there is a second font, just for *italics*, [Victor Mono](https://rubjo.github.io/victor-mono/). See how to set up two fonts on my blog post, [Using Two Fonts in VS Code](https://aaronyoung.dev/blog/2021-01-24-vscode-dual-fonts/)
-
 ## Compatibility
 This theme is still **very much a work in progress**. I primarily develop in HTML & CSS, JS, React so, whilst those language sets should look pretty good, there will likely be issues for other languages. I'll work on adding more support as I go. If you find anything glaringly wrong, raise an issue and I'll try to fix it as soon as I can.
+
+## Known Issues
+
+- Some computers, with the glow enabled, have sluggishness when scrolling. This depends on the capability of the machine, newer machines can render faster than older ones.
 
 ## Contributing
 I'm really happy to consider any contributions to this theme. Before you make any changes, [please read the contribution guide](https://github.com/brainomite/dark-synthwave-vscode/blob/master/CONTRIBUTING.md).
