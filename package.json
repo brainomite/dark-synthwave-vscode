@@ -2,8 +2,9 @@
     "name": "synthwave-vscode",
     "displayName": "SynthWave '84",
     "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
-    "version": "0.1.8",
-    "author": "Robb Owen",
+    "version": "0.0.1",
+    "preview": true,
+    "author": "Aaron Young",
     "publisher": "AaronYoung",
     "repository": {
         "type": "git",
