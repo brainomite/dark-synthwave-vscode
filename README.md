@@ -6,7 +6,7 @@ plus a few tweaks of my own.
 
 Do you like the theme Synthwave '84? Do you wish there was a dark version of it?
 
-I present Dark SynthWave '84, which has two variations, with and without the glow effect.
+I present Dark SynthWave '84, which has two variations, with and without the glow effect with the latter being the default.
 
 ![Neon glowing text](https://raw.githubusercontent.com/brainomite/dark-synthwave-vscode/main/theme.png)
 
