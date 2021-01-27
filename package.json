@@ -19,6 +19,7 @@
         "postversion": "npm run build",
         "patch-version": "npm version patch"
     },
+    "icon": "icon.png",
     "keywords": [
         "Glow",
         "Glowing",
