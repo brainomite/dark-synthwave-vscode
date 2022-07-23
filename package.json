@@ -2,7 +2,7 @@
     "name": "dark-synthwave-vscode",
     "displayName": "Dark SynthWave '84",
     "description": "An amalgamation between Lukin & Synthwave '84 color themes to satisfy your neon dreams",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "preview": true,
     "author": "Aaron Young",
     "publisher": "AaronYoung",
@@ -32,8 +32,7 @@
     ],
     "activationEvents": [
         "*",
-        "onCommand:darkSynthwave84.enableNeon",
-        "onCommand:darkSynthwave84.whatsNew"
+        "onCommand:darkSynthwave84.enableNeon"
     ],
     "main": "./src/extension.js",
     "contributes": {
@@ -52,10 +51,6 @@
             {
                 "command": "darkSynthwave84.disableNeon",
                 "title": "Dark SynthWave '84: Disable Neon Dreams"
-            },
-            {
-                "command": "darkSynthwave84.whatsNew",
-                "title": "Dark SynthWave '84: What's New"
             }
         ],
         "configuration": {
