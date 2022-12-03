@@ -31,14 +31,14 @@ function activate(context) {
       const htmlFile =
         base +
         (isWin
-          ? "\\electron-browser\\workbench\\workbench.html"
-          : "/electron-browser/workbench/workbench.html");
+          ? "\\electron-sandbox\\workbench\\workbench.html"
+          : "/electron-sandbox/workbench/workbench.html");
 
       const templateFile =
         base +
         (isWin
-          ? "\\electron-browser\\workbench\\neondreams.js"
-          : "/electron-browser/workbench/neondreams.js");
+          ? "\\electron-sandbox\\workbench\\neondreams.js"
+          : "/electron-sandbox/workbench/neondreams.js");
       try {
         // const version = context.globalState.get(`${context.extensionName}.version`);
 
