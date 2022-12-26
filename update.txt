@@ -1,0 +1,2 @@
+Login as brainomite
+navigate to https://marketplace.visualstudio.com/manage/publishers/aaronyoung
