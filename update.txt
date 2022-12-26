@@ -1,2 +1,4 @@
 Login as brainomite
+run npm run patch-version
 navigate to https://marketplace.visualstudio.com/manage/publishers/aaronyoung
+upload new generated vsix file
