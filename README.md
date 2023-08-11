@@ -30,7 +30,7 @@ I wanted something easier on my eyes than the original Synthwave '84.
 ## I love your font!
 
 Actually its two fonts! they are
-[JetBrains Mono](https://www.jetbrains.com/lp/mono/") &
+[JetBrains Mono](https://www.jetbrains.com/lp/mono/) &
 [Victor Mono](https://rubjo.github.io/victor-mono/) see my blog post on
 [how I used two fonts simultaneously](https://aaronyoung.dev/blog/2021-01-24-vscode-dual-fonts/)
 
